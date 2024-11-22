@@ -1,0 +1,70 @@
+/*! team css
+ */
+
+.team-area {
+    padding: 50px 0;
+}
+
+.team-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.team-thumb {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.team-social a {
+    margin: 0 5px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.team-social a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 1199px) {
+    .team-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .team-card {
+        padding: 10px;
+    }
+    .team-thumb {
+        max-width: 200px;
+        height: 200px;
+    }
+}
+
+.team-area .row {
+    margin-bottom: 30px; /* Jarak antar baris */
+}
+
+.team-area .row.justify-content-around {
+    margin-top: 30px; /* Jarak baris kedua dari baris pertama */
+}
+
+@media (min-width: 768px) {
+    .team-area .row.justify-content-around .col-xl-3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
